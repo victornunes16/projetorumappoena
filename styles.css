@@ -1,0 +1,15 @@
+/* O seu CSS permanece o mesmo, não é necessário adicionar nada aqui */
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#clickCount, #apiResponse {
+  margin-top: 20px;
+  font-size: 18px;
+}
