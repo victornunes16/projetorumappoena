@@ -8,8 +8,12 @@ clickButton.addEventListener('click', () => {
   count++;
   clickCount.textContent = `Cliques: ${count}`;
   
-  // Chamada da API
-  fetch('http://3.238.219.121:3000/msg')
+  // URL do proxy CORS Anywhere
+  const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+  const targetUrl = 'http://3.238.219.121:3000/msg';
+  
+  // Chamada da API via proxy
+  fetch(proxyUrl + targetUrl)
     .then(response => response.json())
     .then(data => {
       apiResponse.textContent = `Resposta da API: ${data.message}`;
