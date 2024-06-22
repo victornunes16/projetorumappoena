@@ -5,19 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contador de Cliques</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WRDJGH37');</script>
-  <!-- End Google Tag Manager -->
-</head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRDJGH37"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <!-- RUM -->
+  <script>
+    (function(h,o,u,n,d) {
+      h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+      d=o.createElement(u);d.async=1;d.src=n
+      n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+    })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js','DD_RUM')
+    window.DD_RUM.onReady(function() {
+      window.DD_RUM.init({
+        clientToken: 'pub10efddab372659a801e549ba072e53ab',
+        applicationId: '151767b2-a0fc-4fb2-a89d-56badf2460b4',
+        // `site` refers to the Datadog site parameter of your organization
+        // see https://docs.datadoghq.com/getting_started/site/
+        site: 'datadoghq.com',
+        service: 'meu-site',
+        env: 'prod',
+        // Specify a version number to identify the deployed version of your application in Datadog
+        // version: '1.0.0', 
+        sessionSampleRate: 100,
+        sessionReplaySampleRate: 100,
+        trackUserInteractions: true,
+        trackResources: true,
+        trackLongTasks: true,
+        defaultPrivacyLevel: 'mask-user-input',
+      });
+    })
+  </script>
+  <!-- RUM -->
   <div class="container">
     <h1>Contador de Cliques</h1>
     <button id="clickButton">Clique Aqui</button>
