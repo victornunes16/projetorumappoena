@@ -8,6 +8,8 @@ clickButton.addEventListener('click', () => {
   count++;
   clickCount.textContent = `Cliques: ${count}`;
   
+
+  // para testar utilizar o seguinte link:  https://cors-anywhere.herokuapp.com/corsdemo  -  O erro que você está enfrentando é devido ao uso do CORS Anywhere, que tem uma limitação de uso e requer que você primeiro desbloqueie o proxy acessando uma página de demonstração
   // URL do proxy CORS Anywhere
   const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
   const targetUrl = 'http://3.238.219.121:3000/msg';

@@ -11,3 +11,8 @@ button {
 p {
   font-size: 18px;
 }
+
+p a {
+  color: blue;
+  text-decoration: underline;
+}
