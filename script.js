@@ -8,6 +8,8 @@ clickButton.addEventListener('click', () => {
   count++;
   clickCount.textContent = `Cliques: ${count}`;
   
+  
+  // teste
   // URL do proxy CORS Anywhere
   const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
   const targetUrl = 'http://3.238.219.121:3000/msg';
