@@ -8,11 +8,7 @@ const options = {
   Headers: {
     'Content-Type': 'application/json',
   },
-  mode: 'no-cors',
   cache: 'no-cache',
-  credentials: 'same-origin',
-  redirect: 'follow',
-  referrerPolicy: 'no-referrer',
 };
 
 let count = 0;
