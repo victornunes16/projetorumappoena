@@ -11,7 +11,7 @@ clickButton.addEventListener('click', () => {
   
   // Chamada da API via proxy
   // fetch(targetUrl)
-  fetch(targetUrl, options)
+  fetch(targetUrl)
     .then(response => response.json())
     .then(data => {
       apiResponse.textContent = `Resposta da API: ${data.message}`;
