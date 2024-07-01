@@ -7,7 +7,7 @@ let count = 0;
 clickButton.addEventListener('click', () => {
   count++;
   clickCount.textContent = `Cliques: ${count}`;
-  const targetUrl = 'https://50.19.158.248:3000/msg';
+  const targetUrl = 'http://50.19.158.248:3000/msg';
   
   // Chamada da API via proxy
   // fetch(targetUrl)
