@@ -12,6 +12,7 @@ clickButton.addEventListener('click', () => {
   // Chamada da API via proxy
   // fetch(targetUrl)
   fetch(targetUrl)
+    referrerPolicy: "unsafe-url" 
     .then(response => response.json())
     .then(data => {
       apiResponse.textContent = `Resposta da API: ${data.message}`;
